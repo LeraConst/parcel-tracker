@@ -8,7 +8,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install SQLite3
-        run: sudo apt-get update && sudo apt-get install -y sqlite3
+        uses: getong/sqlite-action@v1
         
       - name: Run Unit Tests
         run: GOOS=linux GOARCH=amd64 go test
