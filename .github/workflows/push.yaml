@@ -3,9 +3,10 @@ on: push
 jobs:
   test:
     runs-on: ubuntu-latest
+    container: golang:1.22
     steps:
       - uses: actions/checkout@v4
-	
+
       - name: Install SQLite3
         run: sudo apt-get update && sudo apt-get install -y sqlite3
         
@@ -14,4 +15,4 @@ jobs:
 
       - name: Vet
         run: |
-          go vet ./...
+          go vet ./... 
