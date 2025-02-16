@@ -5,8 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     container: golang:1.22
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 	
       - name: Install SQLite3
         uses: getong/sqlite-action@v1
