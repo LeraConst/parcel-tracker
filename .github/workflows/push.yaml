@@ -9,7 +9,6 @@ jobs:
 
       - name: Install SQLite3
         run: apt-get update && apt-get install -y sqlite3
-        user: root
         
       - name: Run Unit Tests
         run: GOOS=linux GOARCH=amd64 go test
