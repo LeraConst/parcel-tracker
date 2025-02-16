@@ -1,0 +1,19 @@
+name: golang-pipeline
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    container: golang:1.22
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+	
+      - name: Install SQLite3
+        uses: getong/sqlite-action@v1
+        
+      - name: Run Unit Tests
+        run: GOOS=linux GOARCH=amd64 go test
+
+      - name: Vet
+        run: |
+          go vet ./...
