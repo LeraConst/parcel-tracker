@@ -22,23 +22,18 @@ Parcel Tracker – это сервис для управления посылк�
 ---
 
 ## 📂 Структура проекта
-📦 parcel-tracker 
 
-┣ 📜 main.go # Основная логика работы с посылками
-
-┣ 📜 parcel.go # База данных и SQL-запросы
-
-┣ 📜 parcel_test.go # Тесты для работы с посылками
-
-┣ 📜 tracker.db # Файл базы данных SQLite
-
-┣ 📜 Dockerfile # Сборка и запуск контейнера
-
-┣ 📜 go.mod, go.sum # Модули Go
-
-┗ 📂 .github/workflows
-
-    ┗ 📜 push.yaml # CI/CD с тестами и деплоем
+```plaintext
+📦 parcel-tracker
+├── 📜 main.go            # Основная логика работы с посылками
+├── 📜 parcel.go          # База данных и SQL-запросы
+├── 📜 parcel_test.go     # Тесты для работы с посылками
+├── 📜 tracker.db         # Файл базы данных SQLite
+├── 📜 Dockerfile         # Сборка и запуск контейнера
+├── 📜 go.mod, go.sum     # Модули Go
+├── 📂 .github/workflows
+├── README.md             # Этот файл
+```
 
 ---
 
