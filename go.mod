@@ -1,4 +1,4 @@
-module github.com/leraConst/final-project-12th-sprint
+module github.com/leraConst/parcel-tracker
 
 go 1.21.5
 
